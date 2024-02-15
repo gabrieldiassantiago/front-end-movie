@@ -15,7 +15,7 @@ function Favorites() {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/favorites', {
+        const response = await axios.get('https://backend-movie-ashy.vercel.app/api/favorites', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': Cookies.get('authToken')
@@ -38,7 +38,7 @@ function Favorites() {
   const removeFromFavorites = async (movieId) => {
     try {
       const authToken = Cookies.get('authToken');
-      const response = await axios.delete(`http://localhost:3001/api/deletefavorite/${movieId}`, {
+      const response = await axios.delete(`https://backend-movie-ashy.vercel.app/api/deletefavorite/${movieId}`, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: authToken
@@ -46,7 +46,7 @@ function Favorites() {
       });
 
       if (response.status === 200) {
-        const favoritesResponse = await axios.get('http://localhost:3001/api/favorites', {
+        const favoritesResponse = await axios.get('https://backend-movie-ashy.vercel.app/api/favorites', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': Cookies.get('authToken')

@@ -14,6 +14,8 @@ function Signup() {
     navigate('/register');
   };
 
+
+
   useEffect(() => {
     const authToken = Cookies.get('authToken');
 
@@ -27,7 +29,7 @@ function Signup() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:3001/api/login', {
+    const response = await fetch('https://backend-movie-ashy.vercel.app/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
