@@ -28,7 +28,7 @@
     background-size: 70rem;
     opacity: .5;
     transform: rotate(10deg);
-    animation: bg-scroll 20s linear infinite;
+    animation: bg-scroll 35s linear infinite;
 }
 
 body {
