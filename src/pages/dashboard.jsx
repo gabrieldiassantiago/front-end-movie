@@ -23,7 +23,7 @@ function Dashboard() {
         return;
       }
 
-      const response = await fetch('https://https://backend-movie-ashy.vercel.app/api/user-data', {
+      const response = await fetch('https://backend-movie-ashy.vercel.app/api/user-data', {
         method: 'GET',
         headers: {
           Authorization: `${authToken}`,
