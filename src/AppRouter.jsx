@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import SignUp from './pages/Signup';
 import Register from './pages/Register';
 import Dashboard from './pages/dashboard';
-import CheckAuthToken from './utils/checkauth';  // Importe o componente do Dashboard aqui
+import CheckAuthToken from './utils/checkauth';  
 import Cookies from 'js-cookie';
 import Favorites from './pages/favorites';
 
